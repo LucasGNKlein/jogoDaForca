@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+  <div class="sky">
+    <div class="scorebar">
+      <div class="coin-container">
+          <img src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/Coin.gif" height="40px" alt="Coin">
+          <span class="coin-count">x 00</span>
+      </div>
+      <div class="world">
+        <span class="topline-world">WORLD</span> 1 - 1</div>
+      
+      <div class="time">111</div>
+    </div>
+
+    <div class="game-container">
+      <h1>Jogo da Forca</h1>
+      <div id="word-container"></div>
+      <p id="guesses">Tentativas restantes: <span id="remaining"></span></p>
+      <p id="message"></p>
+      <div id="button-container"></div>
+      <input type="text" id="guessInput" placeholder="Digite uma letra ou palavra" onkeydown="if(event.key === 'Enter') guess()">
+      <button onclick="guess()">Tentar</button>
+      <div class="pixel-block" id="heart-container"></div>
+      <img class="cloud" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/CloudDouble.gif">
+      <img class="cloud" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/CloudTriple.gif">
+    </div>
+
+    <img class="cloud" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/CloudSingle.gif">
+  </div>
+
+  <div class="super-mario">
+    <!-- Ground -->
+    <div class="ground">
+      <!-- Bricks -->
+      <div class="skyblocks">
+        <img class="brick" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/Bricks.gif" height="70px;">
+        <img class="brick" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/QuestionBlock.gif" height="70px;">
+        <img class="brick" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/Bricks.gif" height="70px;">
+        <img class="brick" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/Bricks.gif" height="70px;">
+      </div>
+
+      <!-- Bush -->
+      <img class="bush" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/BushSingle.gif" height="70px;">
+      <img class="bush" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/BushDouble.gif" height="70px;">
+      <img class="bush" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/BushSingle.gif" height="70px;">
+
+      <!-- Mario Lives here :D -->
+      <div class="mario"></div>
+    </div>
+  </div>
+
+  <script src="js\main.js"></script>
+</body>
+</html>
